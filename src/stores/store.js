@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
 import counterReducer from './counterSlide'
+import categoriesSelect from './categoriesSelect'
 
 export default configureStore({
     reducer: {
-        counter: counterReducer
+        counter: counterReducer,
+        categoriesSelect: categoriesSelect
     },
 })  
