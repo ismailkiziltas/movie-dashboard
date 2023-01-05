@@ -17,9 +17,13 @@ export const InputField = styled.input`
     border:1px solid #B1C8E9;
     padding:6px 16px;
     ${props => props.search && 'padding-left:30px;'}
+    ${props => props.width && `width: ${props.width};`}
+    ${props => props.height && `height: ${props.height};`}
     border-radius:6px;
     outline:none;
-    
+    padding-right:10px;
+    color:#A0BCE4;
+
     &::placeholder{
         color:#B1C8E9;
     }

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { GridWrapper, GridSection, HomeTitle } from './Home.styled'
-import { Card, Select, TopMovies, Movies, Activity } from '../../components/index'
+import { Card, Select, TopMovies, Movies, Activity, MoviesHeader } from '../../components/index'
 import ReactApexChart from 'react-apexcharts'
 import TopMoviesData from '../../__mocks__/topMovies'
 import categoriesOption from '../../options/categoriesOption'
@@ -56,7 +56,7 @@ const Home = () => {
                         }
                     />
                     <Card title="Top Movies" content={<TopMovies TopMoviesData={TopMoviesData} />} />
-                    <Card title="Movies" content={<Movies />} />
+                    <Card title="Movies" header={<MoviesHeader />} content={<Movies />} />
                 </GridSection>
                 <GridSection>
                     <Card title="Activity" content={<Activity />} />
