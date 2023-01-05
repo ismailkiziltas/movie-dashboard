@@ -5,6 +5,10 @@ export const GridWrapper = styled.div`
     flex-wrap:wrap;
     gap:24px;
     
+    section:last-child{
+        max-width:40%;
+    }
+
     @media (max-width:1400px){
         flex-direction:column;
     }

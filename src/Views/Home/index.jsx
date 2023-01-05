@@ -45,12 +45,12 @@ const Home = () => {
                 <GridSection>
                     <Card title="Categories" content={
                         <ReactApexChart options={categoriesOption.options}
-                            series={categoriesOption.series} type="donut" width={400} />
+                            series={categoriesOption.series} type="donut" width={350} />
                     } header={
                         <Select value={"Month"} options={selectDateWatch} onChange={handleChangeCategories} />
                     } />
                     <Card title="Watch Time" content={
-                        <ReactApexChart options={watchOption.options} series={watchOption.series} type="bar" width={550} />}
+                        <ReactApexChart options={watchOption.options} series={watchOption.series} type="bar" width={410} />}
                         header={
                             <Select value="LastWeek" options={selectLastWatchDate} onChange={handleChangeWatch} />
                         }
